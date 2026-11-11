@@ -8,7 +8,11 @@
 /// Ceci est le fichier principal qui doit contenir le moteur du jeu.
 /// A compléter
 
+int ROWS = 8;
+int COLS = 10;
 
+#define NB_PIECES 6
+piece pieces[NB_PIECES];
 
 // Aléa : tire aléatoirement entre 0 et int_max-1
 int random_int(int int_max) {
@@ -31,6 +35,3 @@ void play(int difficulty) {
     
     // afficher le score en fin de partie.
 }
-
- 
-

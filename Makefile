@@ -6,4 +6,4 @@ game: input.o menu.o game.o main.o board.o
 	gcc -c $<
 
 clean:
-	rm *.o game
+	rm *.o ORAPA

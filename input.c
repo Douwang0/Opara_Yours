@@ -137,6 +137,13 @@ void display_proposition(bool answer) {
 
 
 // Fonction à écrire. Arguments à ajouter.
+/*
+R 3 5 H
+Y 7 3 N
+B 1 1 E
+W 4 6 N
+w 8 6
+*/
 void reveal_grid() {
     
 }
