@@ -23,18 +23,18 @@ struct element_s
 };
 typedef struct element_s element;
 
+
 struct grid_s
 {
-    element** m; // matice applatie de pointeur :3
+    element* m; // matice applatie d'élements :3
     int nbx;
     int nby;
 };
 typedef struct grid_s grid;
 
-struct board {
-    piece* p;
-    grid g;
-};
-
-
+element access(int x, int y, grid board);
+grid generate_empty_grid(int nbx, int nby);
+bool try_pieces(piece* pieces,int nb_pieces, int rows, int cols);
+void fill_grid(piece* pieces, int nb_pieces, grid board);
+void display_grid(grid board, int COLS, int ROWS);
 #endif

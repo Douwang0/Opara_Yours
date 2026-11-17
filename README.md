@@ -18,3 +18,5 @@ Structure board qui contient un tableau (ref) de struct blocs, puis une grille (
 pos de depart et on prend une orientation determinee par le cote d'ou on viens (fonction qui traduit int input vers pos absolue + orientation)
 puis un tableau de couleur dans le contexte (pile) de la fonction de simu du rayon, avec une taille fixe du nombre de couleur max du jeu (4 je crois)
 chaque frame on avance d'une case en fonction de la direction
+
+# Outdated

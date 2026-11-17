@@ -1,3 +1,4 @@
+#include "board.h"
 void flushStdin () ;
   
 // Renvoie la saisie de l'utilisateur.
@@ -10,6 +11,6 @@ void flushStdin () ;
 int read_input(int nb_rows, int nb_cols, int* ret_qu, char* ret_color, int* ret_x, int* ret_y, char* ret_orientation) ;
 void display_answer(int exit_square, char* couleur) ;
 void display_proposition(bool answer) ;
-void display_grid() ;
+void reveal_grid(int len, piece pieces[len]) ;
 
 

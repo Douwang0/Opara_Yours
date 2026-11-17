@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <assert.h>
+#include "board.h"
 
 /// Functions used for interfacing with User 
 // Do not modify this file
@@ -124,7 +125,7 @@ PC = Violet Clair
 */
 // Fonction complète
 void display_answer(int exit_square, char* couleur) {
-    printf("%c %d\n", couleur, exit_square) ;
+    printf("%s %d\n", couleur, exit_square) ;
 }
 
 // Fonction complète mais peut être changée
@@ -144,8 +145,20 @@ B 1 1 E
 W 4 6 N
 w 8 6
 */
-void reveal_grid() {
-    
+void reveal_grid(int len, piece pieces[len]) {
+    for(int i = 0; i<len; i++){
+        piece p = pieces[i];
+        switch (p.col){
+        case 'w':
+            printf("%c %d %d", p.col, p.pos.x, p.pos.y);
+            break;
+        
+        default:
+            printf("%c %d %d %c", p.col, p.pos.x, p.pos.y, p.ori);
+            break;
+        }
+        printf("\n");
+    }
 }
 
 
