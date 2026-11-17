@@ -12,7 +12,7 @@ int random_int(int int_max) {
     return n % int_max ;
 }
 
-void randomise_pieces(piece* pieces, int NB_PIECES,grid board){
+void randomise_pieces(piece* pieces, int NB_PIECES,grid board){ // 100% Hardcoded, 
     char orientations[4] = {'N','S','E','W'};
     char sens[2] = {'V','H'};
     for(int i = 0; i<NB_PIECES; i++){
@@ -254,7 +254,6 @@ void play(int difficulty) {
     }
 
     fill_grid(pieces,NB_PIECES,board);
-
 
     bool done = false;
 

@@ -322,6 +322,7 @@ bool try_pieces(piece* pieces,int nb_pieces, int rows, int cols){// Revoie le su
     grid board = generate_empty_grid(cols,rows);
     for(int i = 0;i<nb_pieces;i++){
         if(!place_in_grid(board,pieces[i])){
+            free(board.m);
             return false;
         }
     }

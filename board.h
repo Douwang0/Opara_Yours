@@ -15,7 +15,7 @@ struct piece_s {
 };
 typedef struct piece_s piece;
 
-// Couleur: "I" pour case vide a remplacer par Null,  puis rot : 0 bloc plein 1-4 position coin triangle -1 case vide
+//rot : 0 bloc plein 1-4 position coin triangle -1 case vide
 struct element_s
 {
     char col;
